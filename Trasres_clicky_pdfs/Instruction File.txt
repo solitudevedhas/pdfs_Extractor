@@ -1,0 +1,19 @@
+### Install required packages
+
+pip install glob
+pip install csv
+pip install tika
+pip install pandas
+
+###
+
+1.   Dump all Data into Data folder 
+2.   place clicky_pdfs2csv.py into same directory with folders 
+3.   open data folder 
+3.   Double click on "clicky_pdfs2csv.py" file 
+4.  once closed then you find that "traser_clicky_data.csv" file
+
+Thank you
+
+
+
