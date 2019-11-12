@@ -15,15 +15,16 @@ new_pdf_content = data.frame()
 for (i in pdf_content) {
     page_df <- i %>% data.frame
     page_df <- page_df[-c(1,2),]
-    drops <- c("X1","X2","X4","X6")
+    drops <- c("X2","X4","X6")
     page_df <- page_df[ , !(names(page_df) %in% drops)]
     new_pdf_content <- rbind(new_pdf_content,page_df)
 }
 
 
-colnames(new_pdf_content) <- c("Supplier", "Rejection Reason" , "Value")
+colnames(new_pdf_content) <- c("Interface ID","Supplier", "Rejection Reason" , "Value")
+row.names(new_pdf_content) <- NULL
 #new_pdf_content
 
-write.csv(new_pdf_content,'Report_1600821.csv')
+write.csv(new_pdf_content,'Report.csv')
 
 
