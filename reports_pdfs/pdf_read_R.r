@@ -41,6 +41,6 @@ for( i in nan_index){
 pdf_contents_DF = subset(pdf_contents_DF,`Rejection Reason`!="")
 
 ## write data to Csv
-write.csv(pdf_contents_DF,"Report_1600821_R.csv", row.names = FALSE)
+write.csv(pdf_contents_DF,"Report_1600821_R.csv", row.names = FALSE, quote = FALSE)
 
 Print(" File Extration Completed ")
